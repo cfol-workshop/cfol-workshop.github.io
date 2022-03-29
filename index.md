@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+While online learning has become one of the most successful and studied approaches in machine learning, in particular with reinforcement learning, online learning algorithms still interact with their environments in a very simple way.
+The complexity and diversity of the feedback coming from the environment in real applications is often reduced to the observation of a scalar reward. More and more researchers now seek to exploit fully the available feedback to allow faster and more human-like learning.
+This workshop aims to present a broad overview of the feedback types being actively researched, highlight recent advances and provide a networking forum for researchers and practitioners.
 
-You can use the [editor on GitHub](https://github.com/cfol-workshop/cfol-workshop.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Description of the workshop
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+While online learning has become one of the most successful and studied approaches in machine learning, in particular with reinforcement learning, online learning algorithms still interact with their environments in a very simple way.
+The complexity and diversity of the feedback coming from the environment in real applications is often reduced to the observation of a scalar reward. More and more researchers now seek to exploit fully the available feedback to allow faster and more human-like learning.
 
-```markdown
-Syntax highlighted code block
+Online learning, in its broad sense, is the task of continuously learning from feedback gathered about an environment. Reinforcement learning (RL) and bandits are prominent examples which have attracted considerable attention in the past years. %, and have been applied in other fields like games.
+Learning online might be a necessity if the environment of the algorithm changes and the behavior to be learned changes with it. It is also a framework which has been used to sequentially learn to act in non-changing settings: learning to act optimally in games can be done by RL, as famously illustrated by AlphaGo.
 
-# Header 1
-## Header 2
-### Header 3
+The standard task abstraction in online learning is the maximization of reward, which is also the feedback to the algorithm: the learner performs an action, observes whether it got a high reward, and improves its behavior based on that feedback.
 
-- Bulleted
-- List
+However, this model oversimplifies feedback available in complex real-world applications, where observables beyond the reward abound. Examples include the actions of other players in games. Feedback can further result from the interaction of several past actions, or be delayed. Moreover, the reward might not be observable: the algorithm could learn from indirect signals like preferences instead. The result of an action can be incompletely observed, as in auctions. The algorithm might want to learn from examples or guidance provided by humans.
 
-1. Numbered
-2. List
+This workshop aims to present a broad overview of the feedback types being actively researched, highlight recent advances and provide a networking forum for researchers and practitioners.
 
-**Bold** and _Italic_ and `Code` text
+### Invited Speakers
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cfol-workshop/cfol-workshop.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Organizers
