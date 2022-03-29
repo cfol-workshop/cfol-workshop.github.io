@@ -9,14 +9,15 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>4TUNE</title>
+  <title>CFOL Workshop</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
-
+  <link href="css/organizers.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
 </head>
 
 <body id="page-top">
@@ -24,202 +25,270 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">4TUNE</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">CFOL Workshop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#presentation">Presentation</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            <a class="nav-link js-scroll-trigger" href="#speakers">Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#schedule">Schedule</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+            <a class="nav-link js-scroll-trigger" href="#submit">Submit</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#organizers">Organizers</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="bg-primary text-white">
+  <header style="background-color:#4b86b4;" class="text-white">
     <div class="container text-center">
-      <h1>4TUNE</h1>
-      <p class="lead">Adaptive, Efficient, Provable and Flexible Tuning for Machine Learning</p>
-      <p>Joint research team between CWI and Inria. </p>
+      <h1>Complex Feedback in Online Learning</h1><br/>
+      <p>Workshop at the International Conference on Machine Learning (ICML) 2022</p>
     </div>
   </header>
 
-  <section id="presentation">
+  <section id="about">
     <div class="container">
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-7 text-center">
+            <h2 class="display-5 mb-3">Description of the workshop</h2>
+            <p class="lead">This workshop aims to present a broad overview of the feedback types being actively researched, highlight recent advances and provide a networking forum for researchers and practitioners.</p>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Presentation</h2>
-
-          <p class="lead">
-            4TUNE is an associate team within <a href="https://project.inria.fr/inriacwi/">CWI-Inria International Lab</a>. 
+          <p>
+            While online learning has become one of the most successful and studied approaches in machine learning, in particular with reinforcement learning, online learning algorithms still interact with their environments in a very simple way.
+            The complexity and diversity of the feedback coming from the environment in real applications is often reduced to the observation of a scalar reward. More and more researchers now seek to exploit fully the available feedback to allow faster and more human-like learning.
           </p>
 
           <p>
-            The long-term goal of 4TUNE is to push adaptive machine learning to the next level. We aim to develop refined methods, going beyond traditional worst-case analysis, for exploiting structure in the learning problem at hand. We will develop new theory and design sophisticated algorithms for the core tasks of statistical learning and individual sequence prediction. We are especially interested in understanding the connections between these tasks and developing unified methods for both. We will also investigate adaptivity to non-standard patterns encountered in embedded learning tasks, in particular in iterative equilibrium computations.
+            Online learning, in its broad sense, is the task of continuously learning from feedback gathered about an environment. Reinforcement learning (RL) and bandits are prominent examples which have attracted considerable attention in the past years. 
+
+            Learning online might be a necessity if the environment of the algorithm changes and the behavior to be learned changes with it. It is also a framework which has been used to sequentially learn to act in non-changing settings: learning to act optimally in games can be done by RL, as famously illustrated by AlphaGo.
+          </p>
+
+          <p>
+            The standard task abstraction in online learning is the maximization of reward, which is also the feedback to the algorithm: the learner performs an action, observes whether it got a high reward, and improves its behavior based on that feedback.
+
+            However, this model oversimplifies feedback available in complex real-world applications, where observables beyond the reward abound. Examples include the actions of other players in games. Feedback can further result from the interaction of several past actions, or be delayed. Moreover, the reward might not be observable: the algorithm could learn from indirect signals like preferences instead. The result of an action can be incompletely observed, as in auctions. The algorithm might want to learn from examples or guidance provided by humans.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="speakers" class="bg-light">
+    <div class="container">
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-7 text-center">
+            <h2 class="display-5 mb-3">Invited Speakers</h2>
+            <p class="lead">The workshop includes the following list of seven invited speakers. Topics will cover a variety of unconventional feedback encountered in various real world applications ranging from economics to music recommendation tools.</p>
+        </div>
+      </div>
+
+      <div class="row">
+            <!-- column  -->
+            <div class="col-lg-6">
+                <div class="card shadow border-0 mb-4">
+                    <!-- Row -->
+                    <div class="row no-gutters">
+                        <div class="col-md-5 pro-pic" style="background:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg) center center no-repeat">
+                        </div>
+                        <div class="col-md-7 bg-white">
+                            <div class="p-4">
+                                <h6 class="mb-3">Noel Flantier</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div> <!-- Row -->
+                </div>
+            </div> <!-- column  -->
+            <div class="col-lg-6">
+                <div class="card shadow border-0 mb-4">
+                    <!-- Row -->
+                    <div class="row no-gutters card-shadow">
+                        <div class="col-md-5 pro-pic" style="background:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg) center center no-repeat">
+                        </div>
+                        <div class="col-md-7 bg-white">
+                            <div class="p-4">
+                                <h6 class="mb-3">Johnna Doe</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div> <!-- Row -->
+                </div>
+            </div> <!-- column  -->
+        </div>
+        <div class="row">
+            <!-- column  -->
+            <div class="col-lg-6">
+                <div class="card card-shadow border-0 mb-4">
+                    <!-- Row -->
+                    <div class="row no-gutters shadow">
+                        <div class="col-md-5 pro-pic" style="background:url('https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg') center center no-repeat">
+                        </div>
+                        <div class="col-md-7 bg-white">
+                            <div class="p-4">
+                                <h6 class="mb-3">Bobby Bone</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div> <!-- Row -->
+                </div>
+            </div> <!-- column  -->
+            <div class="col-lg-6">
+                <div class="card shadow mb-4">
+                    <!-- Row -->
+                    <div class="row no-gutters card-shadow">
+                        <div class="col-md-5 pro-pic" style="background:url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg) center center no-repeat">
+                        </div>
+                        <div class="col-md-7 bg-white">
+                            <div class="p-4">
+                                <h6 class="mb-3">Zianah Lee</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                        </div>
+                    </div> <!-- Row -->
+                </div>
+            </div> <!-- column  -->
+        </div>
+
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="container">
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-7 text-center">
+            <h2 class="display-5 mb-3">Schedule</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <p>  
+            We have planned 7 invited talks of 25 minutes with the goal of providing a broad overview of the theme. We will host two poster sessions showcasing contributed work of 1h30 each. Our review process will further select 6 submissions for a contributed talk of 15 minutes. 
+          </p>
+          <p>
+            <strong>Project flip-overs:</strong> 
+            We consider our workshop a success if it inspires students to embark on new projects. To catalyze germination, we will provide flip-overs during the poster session, around which we will encour- age participants to propose, sketch and discuss new starting points, ideas, questions or applications. 
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="team" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Team</h2>
-          <p>
-          4TUNE includes 2 research scientists from the Centrum Wiskunde & Informatica (CWI) and 4 researchers from Inria from three project team (Sierra, Thoth, Scool). 
-          </p>
 
-          
-          
-          <div class="container">
-            <div class="row justify-content-md-center">
-              <div class="col-md-auto">
-                <div style="align: left; text-align:center;">
-                  CWI researchers<br><br>
-                </div>
-                <div class="row justify-content-md-center">
-                  <div class="col-md-auto">
-                    <div style="align: center; text-align:center;">
-                    <a href="http://homepages.cwi.nl/~pdg/"><img id="image" src="https://safestatistics.com/wp-content/uploads/2017/11/PCM2017cropped.jpg" height="150"></a> </br>
-                    <a href="http://homepages.cwi.nl/~pdg/">Peter Grünwald</a><br><br>
-                    </div>
-                  </div>
-                  <div class="col-md-auto">
-                    <div style="align: left; text-align:center;">
-                    <a href="http://wouterkoolen.info/"><img id="image" src="http://wouterkoolen.info/heads/MK3_9361.jpg" height="150"></a>
-                    </br> 
-                    <a href="http://wouterkoolen.info">Wouter M. Koolen</a><br><br>
-                    </div>
-                  </div>
-                </div>
+  <section id="organizers" class="bg-light">
+    <div class="container">
+
+      <div class="row justify-content-center mb-3">
+        <div class="col-md-7 text-center">
+            <h2 class="display-5 mb-3">Organizers</h2>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="member-img">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" class="img-fluid" alt="">
               </div>
-              <br><br>
-              <div class="col-md-auto">
-                <div style="align: left; text-align:center;">
-                INRIA researchers <br><br>
+                <div class="member-info">
+                    <h4>Emma White</h4>
+                    <span>Web Designer</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="row justify-content-md-center">
-                  <div class="col-md-auto">
-                    <div style="align: left; text-align:center;">
-                    <a href="http://www.di.ens.fr/~fbach"><img id="image" src="https://www.di.ens.fr/sierra/photos/francis.jpg" width="150" height="150"></a>
-                    </br>
-                    <a href="https://www.di.ens.fr/~fbach/">Francis Bach</a> 
-                   </div>
-                  </div>
-                  <div class="col-md-auto">
-                  <div style="align: left; text-align:center;">
-                  <a href="http://pierre.gaillard.me/"><img id="image" src="https://prairie-institute.fr/wp-content/uploads/2019/11/Pierre-Gaillard.jpg" height="150"></a> 
-                  </br>
-                  <a href="http://pierre.gaillard.me/">Pierre Gaillard</a>
-                  </div>
-                </div>
-                <div class="col-md-auto">
-                  <div style="align: left; text-align:center;">
-                  <a href="https://www.di.ens.fr/~ataylor/"><img id="image" src="http://www.di.ens.fr/~ataylor/my_face.png" height="150"></a>
-                  </br>
-                  <a href="https://www.di.ens.fr/~ataylor/">Adrien Taylor</a>
-                  </div>
-                </div>
-                <div class="col-md-auto">
-                  <div style="align: left; text-align:center;">
-                  <a href="https://remydegenne.github.io/"><img id="image" src="https://remydegenne.github.io/images/avatar2.jpg" height="150"></a>
-                  </br>
-                  <a href="https://remydegenne.github.io/">Rémy Degenne</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="member-img">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" class="img-fluid" alt="">
+              </div>
+                <div class="member-info">
+                    <h4>Bobby Robins</h4>
+                    <span>Web Developer</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="member-img">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" class="img-fluid" alt="">
+              </div>
+                <div class="member-info">
+                    <h4>Gena lee</h4>
+                    <span>SEO Expert</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="member-img">
+                  <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" class="img-fluid" alt="">
+              </div>
+                <div class="member-info">
+                    <h4>Noel Flantier</h4>
+                    <span>ISO Developer</span>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+          </div>
       </div>
     </div>
   </section>
 
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Ongoing projects</h2>
-          <p>
-            Koolen, Gaillard and Taylor have started a project on bandit convex optimisation, where the objective is to adapt to the unknown function and noise structure. The first steps will be to work out information-theoretic lower bounds and make them operational, which requires optimisation over function classes (this is one of the strong points of the INRIA Paris team). We will further draw on saddle-point methods developed at CWI to obtain provable algorithms.
-          </p>
-          <p>
-            Koolen, Gaillard, and Taylor have started another project on projection-free learning, where the objective is to fill the gap between projection-based and linear optimization-based methods in  online learning. For doing that, we rely on the idea of « mimicking » projection-based method using projection-free ones. The first steps rely on the idea of analyzing performances of projection-based methods when the potentially expansive projection steps are roughly approximated, and on analyzing the capability of the other methods for providing those estimates.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="publications">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Publications</h2>
-          <p>
-            The list below contains papers related to the 4TUNE project. Those works fit 4TUNE's themes on adaptivity (and its underlying cost), as well as  the development of flexible algorithms with with provable guarantees going beyond pure worst-case analysis.
-          </p>
-          <ul>
-            <li>
-              <a href="https://arxiv.org/pdf/2002.12242.pdf">Lipschitz and comparator-norm adaptivity in online learning.</a> Z. Mhammedi, W. M. Koolen. In Proceedings of the 33rd Annual Conference on Learning Theory (COLT), 2020.
-            </li>
-            <li>
-              <a href="http://proceedings.mlr.press/v119/degenne20b/degenne20b.pdf">Structure adaptive algorithms for stochastic bandits.</a> R. Degenne, H. Shao, W. M. Koolen. In Proceedings of the 37th International Conference on Machine Learning (ICML), 2020.
-            </li>
-            <li>
-              <a href="https://arxiv.org/pdf/2011.06957.pdf">Non-stationary Online Regression.</a> A. Raj, P. Gaillard, C. Saad. Technical report, 2020. 
-            </li>
-            <li>
-              <a href="https://arxiv.org/pdf/2003.08109.pdf">Efficient improper learning for online logistic regression.</a> J. Rémi, P. Gaillard,  A. Rudi. In Proceedings of the 33rd Annual Conference on Learning Theory (COLT), 2020. 
-            </li>
-            <li>
-              <a href="https://arxiv.org/pdf/2002.00915.pdf">Complexity guarantees for Polyak Steps with momentum.</a> M. Barré, A. Taylor, A. d’Aspremont. Proceedings of the 33rd Annual Conference on Learning Theory (COLT), 2020.
-            </li>
-            <li>
-              <a href="https://arxiv.org/pdf/2010.15482.pdf">Convergence of Constrained Anderson Acceleration.</a> M. Barré, A. Taylor, A. d’Aspremont. Technical report, 2020.
-            </li>
-            <li>
-              <a href="https://arxiv.org/pdf/2006.06041.pdf">Principled Analyses and Design of First-Order Methods with Inexact Proximal Operators.</a> M. Barré, A. Taylor, F. Bach. Technical report, 2020.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">
-            Please visit contact information on researchers' webpages. 
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; 4TUNE 2020</p>
+      <p class="m-0 text-center text-white">CFOL Workshop 2022</p>
     </div>
     <!-- /.container -->
   </footer>
