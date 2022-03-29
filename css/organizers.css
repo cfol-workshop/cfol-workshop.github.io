@@ -65,7 +65,11 @@
     transition: none;
     color: #fff;
 }
-#organizers .member .social-links a:hover {
+#organizers .member a {
+    transition: none;
+    color: #fff;
+}
+#organizers .member a:hover {
     color: #ffc107;
 }
 #organizers .member .social-links i {
